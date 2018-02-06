@@ -11,4 +11,9 @@ router.get('/stats', function(req, res){
   res.send('Fighter Stats Page')
 });
 
+// Fighter homepage route
+router.get('/', function(req, res){
+  res.send('Fighter Homepage')
+});
+
 module.exports = router;
