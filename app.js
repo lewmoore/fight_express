@@ -1,9 +1,13 @@
 var express = require('express');
 var app = express();
 var fighter = require('./routes/fighter.js')
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 
 app.get('/', function(req, res) {
-  res.send('Fight Express Homepage!');
+  res.render('homepage', { title: 'Fight Express Homepage',
+                            message: 'This is the Fighter Express homepage!'});
 });
 
 app.get('/about', function(req, res) {
