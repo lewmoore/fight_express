@@ -2,16 +2,15 @@ var express = require('express');
 var app = express();
 var fighter = require('./routes/fighter.js')
 app.set('view engine', 'pug');
-app.set('views', './views');
+app.set('views', "views");
 
 
 app.get('/', function(req, res) {
-  res.render('homepage', { title: 'Fight Express Homepage',
-                            message: 'This is the Fighter Express homepage!'});
+  res.render('homepage');
 });
 
 app.get('/about', function(req, res) {
-  res.send('About Fight Express Page!');
+  res.render("About");
 });
 
 app.listen(3000, function() {
