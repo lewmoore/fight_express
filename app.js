@@ -18,3 +18,5 @@ app.listen(3000, function() {
 });
 
 app.use('/fighter', fighter);
+
+module.exports = app
