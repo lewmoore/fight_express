@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var fighter = require('./routes/fighter.js')
+var fighter = require('./routes/fighter')
 app.set('view engine', 'pug');
 app.set('views', "views");
 

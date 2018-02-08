@@ -3,17 +3,17 @@ var router = express.Router();
 
 // Fighter new route
 router.get('/new', function(req, res){
-  res.send('New Fighter Page');
+  res.render('fighter/new')
 });
 
 // Fighter stats route
 router.get('/stats', function(req, res){
-  res.send('Fighter Stats Page')
+  res.render('fighter/stats')
 });
 
 // Fighter homepage route
 router.get('/', function(req, res){
-  res.send('Fighter Homepage')
+  res.render('fighter/home')
 });
 
 module.exports = router;
