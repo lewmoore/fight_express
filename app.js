@@ -13,6 +13,10 @@ app.get('/about', function(req, res) {
   res.render("About");
 });
 
+app.post('/player', function(req, res) {
+  res.render('player');
+});
+
 app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
 });

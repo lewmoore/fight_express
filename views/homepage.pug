@@ -1,3 +1,15 @@
 html 
   body
-    p Fight Express Home Page!
+    p Fight Express Home Page! Sign up below!
+    
+    form(action='/player', method='post')
+      label(for='name')
+        | Name:
+        input(name='name', type='text', required='')
+      label(for='username')
+        | Username:
+        input(name='username', type='text', required='')
+      label(for='password')
+        | Password:
+        input(name='password', type='password', required='')
+      input(type='submit', value='Sign up')
