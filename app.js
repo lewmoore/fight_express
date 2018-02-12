@@ -5,19 +5,19 @@ app.set('view engine', 'pug');
 app.set('views', "views");
 
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.render('homepage');
 });
 
-app.get('/about', function(req, res) {
+app.get('/about', (req, res) => {
   res.render("About");
 });
 
-app.post('/player', function(req, res) {
+app.post('/player', (req, res) => {
   res.render('player');
 });
 
-app.listen(3000, function() {
+app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });
 
