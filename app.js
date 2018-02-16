@@ -12,7 +12,7 @@ app.set('views', "views");
 app.route('/')
 
     .get(function(req, res, next) {
-      res.render('homepage');
+      res.render('homepage', { title: 'Fight Express' });
     })
 
     .post(function(req, res) {

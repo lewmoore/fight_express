@@ -4,7 +4,7 @@ This is a side project that I will be slowly adding to which is inspired by
 the Battle Application Project from Makers Academy course.
 
 This application will be written in Javascript using Node and Express. Testing
-will be done with Jasmine.
+will be done with Jasmine, Mocha and Chai.
 
 # Specifications:
 * I want to be able to create a fighter and view my health
