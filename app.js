@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var session = require('express-session')
+var bodyParser = require('body-parser')
 var fighter = require('./routes/fighter')
 var router = express.Router();
 var port = process.env.PORT || 3000;
@@ -9,7 +11,7 @@ app.set('views', "views");
 
 app.route('/')
 
-    .get(function(req, res) {
+    .get(function(req, res, next) {
       res.render('homepage');
     })
 
