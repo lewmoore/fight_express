@@ -1,19 +1,19 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
 // Fighter new route
-router.get('/new', (req, res) => {
-  res.render('fighter/new')
+router.get("/new", (req, res) => {
+  res.render("fighter/new");
 });
 
 // Fighter stats route
-router.get('/stats', (req, res) => {
-  res.render('fighter/stats')
+router.get("/stats", (req, res) => {
+  res.render("fighter/stats");
 });
 
 // Fighter homepage route
-router.get('/', (req, res) => {
-  res.render('fighter/home')
+router.get("/", (req, res) => {
+  res.render("fighter/home");
 });
 
 module.exports = router;
